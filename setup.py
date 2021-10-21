@@ -14,7 +14,7 @@ long_description = '\n\n'.join([
 
 setup(
     name='rer.immersivereader',
-    version='1.0a1',
+    version='0.1.0',
     description="Plone integration for Microsoft's Immersive Reader",
     long_description=long_description,
     # Get more from https://pypi.org/classifiers/
