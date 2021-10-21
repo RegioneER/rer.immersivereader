@@ -9,5 +9,6 @@ include *.lock
 include *.txt
 include *.yml
 include tox.ini
-
+exclude .eslintrc
+exclude .prettierignore
 prune src/rer/immersivereader/browser/static/node_modules
