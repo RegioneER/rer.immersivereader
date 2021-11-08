@@ -33,13 +33,20 @@ require([
           var subdomain = response.subdomain;
           var content = '';
           if ($('body').hasClass('template-rernews_view')) {
-            content = $('.news-text').html();
+            content = $('.news-text').html() || '';
           } else if ($('body').hasClass('portaltype-bando')) {
-            content = $('.rer-contextual-text').html();
+            content = $('.rer-contextual-text').html() || '';
           } else if ($('body').hasClass('portaltype-event')) {
-            content = $('#parent-fieldname-text').html();
+            var details = $('.event.summary.details').html() || '';
+            var text = $('#parent-fieldname-text').html() || '';
+            content = details + text;
+          } else if (
+            $('body').hasClass('template-collection_bandi_view') ||
+            $('body').hasClass('template-collection_bandi_tipologia_view')
+          ) {
+            content = $('#content .document-text').html() || '';
           } else {
-            content = $('#content-core').html();
+            content = $('#content-core').html() || '';
           }
 
           // Learn more about chunk usage and supported MIME types https://docs.microsoft.com/azure/cognitive-services/immersive-reader/reference#chunk
