@@ -4,7 +4,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2021-11-08 13:48+0000\n"
+"POT-Creation-Date: 2021-11-11 09:17+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI +ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,27 +17,38 @@ msgstr ""
 "Preferred-Encodings: utf-8 latin1\n"
 "Domain: rer.immersivereader\n"
 
-#: rer/immersivereader/browser/immersive_reader_viewlet.pt:5
-msgid "Immersive reader"
+#: rer/immersivereader/browser/controlpanel.py:14
+#: rer/immersivereader/profiles/default/controlpanel.xml
+msgid "Immersive Reader Settings"
 msgstr ""
 
 #: rer/immersivereader/configure.zcml:28
 msgid "Installs the rer.immersivereader add-on."
 msgstr ""
 
+#: rer/immersivereader/configure.zcml:28
+msgid "RER: Immersive Reader"
+msgstr ""
+
+#: rer/immersivereader/configure.zcml:37
+msgid "RER: Immersive Reader (uninstall)"
+msgstr ""
+
 #: rer/immersivereader/configure.zcml:37
 msgid "Uninstalls the rer.immersivereader add-on."
 msgstr ""
 
+#. Default: "Select a list of portal types that will have Immersive Reader link enabled."
+#: rer/immersivereader/interfaces.py:17
+msgid "enabled_types_help"
+msgstr ""
+
+#. Default: "Enabled portal types"
+#: rer/immersivereader/interfaces.py:16
+msgid "enabled_types_label"
+msgstr ""
+
 #. Default: "Immersive reader"
-#: rer/immersivereader/browser/immersive_reader_viewlet.pt:4
+#: rer/immersivereader/browser/immersive_reader_viewlet.pt:3
 msgid "immersive_reader_label"
-msgstr ""
-
-#: rer/immersivereader/configure.zcml:28
-msgid "rer.immersivereader"
-msgstr ""
-
-#: rer/immersivereader/configure.zcml:37
-msgid "rer.immersivereader (uninstall)"
 msgstr ""

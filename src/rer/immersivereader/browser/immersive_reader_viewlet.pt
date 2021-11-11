@@ -7,8 +7,8 @@
        i18n:attributes="title immersive_reader_label;">
         <tal:label i18n:translate="immersive_reader_label">Immersive reader</tal:label>
         <img src="https://contentstorage.onenote.office.net/onenoteltir/permanent-static-resources/immersive-reader-icon.svg"
-             alt="Immersive reader"
-             i18n:attributes="alt immersive_reader_label;"
+             alt=""
+             aria-hidden="true"
              style="width: 20px; height: 20px; vertical-align: middle; margin-top: -2px;">
     </a>
 </div>

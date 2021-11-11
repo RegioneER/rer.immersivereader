@@ -14,6 +14,12 @@ You need to set some env variables in buildout, to get the right token:
 - IMR_TENANT_ID (tenant id)
 - IMR_SUBDOMAIN (subdomain)
 
+Control panel
+-------------
+
+In the control panel (*@immersive-reader-settings*) you can:
+
+- Set a list of portal_types where the immersive reader will be enabled.
 
 Installation
 ============

@@ -20,7 +20,7 @@
 
   <genericsetup:registerProfile
       name="default"
-      title="rer.immersivereader"
+      title="RER: Immersive Reader"
       directory="profiles/default"
       description="Installs the rer.immersivereader add-on."
       provides="Products.GenericSetup.interfaces.EXTENSION"
@@ -29,7 +29,7 @@
 
   <genericsetup:registerProfile
       name="uninstall"
-      title="rer.immersivereader (uninstall)"
+      title="RER: Immersive Reader (uninstall)"
       directory="profiles/uninstall"
       description="Uninstalls the rer.immersivereader add-on."
       provides="Products.GenericSetup.interfaces.EXTENSION"

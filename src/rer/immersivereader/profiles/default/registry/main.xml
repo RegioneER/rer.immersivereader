@@ -3,6 +3,7 @@
     xmlns:i18n="http://xml.zope.org/namespaces/i18n"
     i18n:domain="rer.immersivereader">
 
+    <records interface="rer.immersivereader.interfaces.IImmersiveReaderSettings" prefix="rer.immersivereader" />
 
     <records prefix="plone.resources/rer-immersive-reader"
             interface='Products.CMFPlone.interfaces.IResourceRegistry'>

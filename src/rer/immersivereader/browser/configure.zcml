@@ -27,4 +27,13 @@
       permission="zope2.View"
       for="plone.dexterity.interfaces.IDexterityContent"
       />
+    
+    <browser:page
+      name="immersive-reader-settings"
+      for="Products.CMFPlone.interfaces.IPloneSiteRoot"
+      class=".controlpanel.SettingsView"
+      layer="rer.immersivereader.interfaces.IRerImmersivereaderLayer"
+      permission="cmf.ManagePortal"
+      />
+
 </configure>
