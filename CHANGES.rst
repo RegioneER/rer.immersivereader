@@ -2,7 +2,7 @@ Changelog
 =========
 
 
-0.1.1 (unreleased)
+0.1.1 (2021-11-11)
 ------------------
 
 - Fix link accessibility.
