@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2021-11-11 09:17+0000\n"
+"POT-Creation-Date: 2021-11-27 18:14+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI +ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -46,6 +46,11 @@ msgid "enabled_types_label"
 msgstr "Tipi di contenuto"
 
 #. Default: "Immersive reader"
-#: rer/immersivereader/browser/immersive_reader_viewlet.pt:3
+#: rer/immersivereader/browser/immersive_reader_viewlet.pt:8
 msgid "immersive_reader_label"
 msgstr "Lettura facilitata"
+
+#. Default: "Immersive reader"
+#: rer/immersivereader/browser/immersive_reader_viewlet.pt:3
+msgid "immersive_reader_link_title"
+msgstr "Traduzione e lettura ad alta voce"
