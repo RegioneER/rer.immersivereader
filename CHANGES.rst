@@ -2,7 +2,7 @@ Changelog
 =========
 
 
-0.1.2 (unreleased)
+0.1.2 (2021-11-27)
 ------------------
 
 - Fix link title label.
