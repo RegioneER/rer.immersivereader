@@ -5,7 +5,8 @@ Changelog
 0.1.3 (unreleased)
 ------------------
 
-- Nothing changed yet.
+- Install restapi by default.
+  [cekk]
 
 
 0.1.2 (2021-11-27)

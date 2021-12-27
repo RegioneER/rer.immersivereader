@@ -10,6 +10,7 @@ from plone.app.testing import (
 from plone.testing import z2
 
 import rer.immersivereader
+import plone.restapi
 
 
 class RerImmersivereaderLayer(PloneSandboxLayer):
@@ -20,12 +21,12 @@ class RerImmersivereaderLayer(PloneSandboxLayer):
         # Load any other ZCML that is required for your tests.
         # The z3c.autoinclude feature is disabled in the Plone fixture base
         # layer.
-        import plone.restapi
+
         self.loadZCML(package=plone.restapi)
         self.loadZCML(package=rer.immersivereader)
 
     def setUpPloneSite(self, portal):
-        applyProfile(portal, 'rer.immersivereader:default')
+        applyProfile(portal, "rer.immersivereader:default")
 
 
 RER_IMMERSIVEREADER_FIXTURE = RerImmersivereaderLayer()
@@ -33,13 +34,13 @@ RER_IMMERSIVEREADER_FIXTURE = RerImmersivereaderLayer()
 
 RER_IMMERSIVEREADER_INTEGRATION_TESTING = IntegrationTesting(
     bases=(RER_IMMERSIVEREADER_FIXTURE,),
-    name='RerImmersivereaderLayer:IntegrationTesting',
+    name="RerImmersivereaderLayer:IntegrationTesting",
 )
 
 
 RER_IMMERSIVEREADER_FUNCTIONAL_TESTING = FunctionalTesting(
     bases=(RER_IMMERSIVEREADER_FIXTURE,),
-    name='RerImmersivereaderLayer:FunctionalTesting',
+    name="RerImmersivereaderLayer:FunctionalTesting",
 )
 
 
@@ -49,5 +50,5 @@ RER_IMMERSIVEREADER_ACCEPTANCE_TESTING = FunctionalTesting(
         REMOTE_LIBRARY_BUNDLE_FIXTURE,
         z2.ZSERVER_FIXTURE,
     ),
-    name='RerImmersivereaderLayer:AcceptanceTesting',
+    name="RerImmersivereaderLayer:AcceptanceTesting",
 )
