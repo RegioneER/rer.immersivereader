@@ -34,7 +34,19 @@ require([
           var subdomain = response.subdomain;
           var content = '';
           if ($('body').hasClass('template-rernews_view')) {
-            content = $('.news-text').html() || '';
+            var beforeTextTiles = $('.before-text .tilesList').html() || '';
+            var afterTextTiles = $('.after-text .tilesList').html() || '';
+            var text = $('.news-text').html() || '';
+            var newsColumnContents =
+              $('.news-column .news-contents').html() || '';
+            var newsColumnTiles =
+              $('.news-column .right-column .tilesList').html() || '';
+            content =
+              beforeTextTiles +
+              text +
+              afterTextTiles +
+              newsColumnContents +
+              newsColumnTiles;
           } else if ($('body').hasClass('portaltype-bando')) {
             content = $('.rer-contextual-text').html() || '';
           } else if ($('body').hasClass('portaltype-event')) {

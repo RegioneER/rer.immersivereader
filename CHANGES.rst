@@ -5,7 +5,8 @@ Changelog
 0.1.4 (unreleased)
 ------------------
 
-- Nothing changed yet.
+- Handle ERNews tiles columns.
+  [cekk]
 
 
 0.1.3 (2021-12-27)
