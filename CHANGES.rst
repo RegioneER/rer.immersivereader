@@ -5,8 +5,8 @@ Changelog
 0.1.4 (unreleased)
 ------------------
 
-- Nothing changed yet.
-
+- Fix setup.py.
+  [cekk]
 
 0.1.3 (2021-12-27)
 ------------------
