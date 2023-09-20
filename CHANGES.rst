@@ -5,7 +5,8 @@ Changelog
 0.1.5 (unreleased)
 ------------------
 
-- Nothing changed yet.
+- Do not fix restapi version.
+  [cekk]
 
 
 0.1.4 (2023-06-27)
