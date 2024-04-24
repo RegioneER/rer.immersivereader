@@ -1,10 +1,12 @@
-from rer.immersivereader.testing import RESTAPI_TESTING
-from plone.app.testing import setRoles
-from plone.app.testing import SITE_OWNER_NAME
-from plone.app.testing import SITE_OWNER_PASSWORD
-from plone.app.testing import TEST_USER_ID
-from plone.restapi.testing import RelativeSession
 from plone import api
+from plone.app.testing import (
+    setRoles,
+    SITE_OWNER_NAME,
+    SITE_OWNER_PASSWORD,
+    TEST_USER_ID,
+)
+from plone.restapi.testing import RelativeSession
+from rer.immersivereader.testing import RESTAPI_TESTING
 from transaction import commit
 
 import unittest

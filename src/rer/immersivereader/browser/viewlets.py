@@ -5,6 +5,7 @@ from plone.app.layout.viewlets.common import ViewletBase
 
 import logging
 
+
 logger = logging.getLogger(__name__)
 
 

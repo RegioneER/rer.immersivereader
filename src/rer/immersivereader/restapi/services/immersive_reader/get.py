@@ -1,11 +1,10 @@
 # -*- coding: utf-8 -*-
+from plone import api
 from plone.api.exc import InvalidParameterError
 from plone.restapi.interfaces import IExpandableElement
 from plone.restapi.services import Service
 from zope.component import adapter
-from zope.interface import implementer
-from zope.interface import Interface
-from plone import api
+from zope.interface import implementer, Interface
 
 
 @implementer(IExpandableElement)

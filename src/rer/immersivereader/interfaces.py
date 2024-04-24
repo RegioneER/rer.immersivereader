@@ -3,7 +3,7 @@ from plone.restapi.controlpanels import IControlpanel
 from rer.immersivereader import _
 from zope.interface import Interface
 from zope.publisher.interfaces.browser import IDefaultBrowserLayer
-from zope.schema import List, Choice
+from zope.schema import Choice, List
 
 
 class IRerImmersivereaderLayer(IDefaultBrowserLayer):

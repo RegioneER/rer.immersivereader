@@ -1,12 +1,14 @@
-from plone.app.testing import applyProfile
-from plone.app.testing import FunctionalTesting
-from plone.app.testing import IntegrationTesting
-from plone.app.testing import PLONE_FIXTURE
-from plone.app.testing import PloneSandboxLayer
+from plone.app.testing import (
+    applyProfile,
+    FunctionalTesting,
+    IntegrationTesting,
+    PLONE_FIXTURE,
+    PloneSandboxLayer,
+)
 from plone.testing.zope import WSGI_SERVER_FIXTURE
 
-import rer.immersivereader
 import plone.restapi
+import rer.immersivereader
 
 
 class TestLayer(PloneSandboxLayer):

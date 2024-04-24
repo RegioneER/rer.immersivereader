@@ -1,10 +1,11 @@
 from plone.restapi.controlpanels import RegistryConfigletPanel
-from rer.immersivereader.interfaces import IImmersiveReaderControlpanel
-from rer.immersivereader.interfaces import IImmersiveReaderSettings
-from rer.immersivereader.interfaces import IRerImmersivereaderLayer
+from rer.immersivereader.interfaces import (
+    IImmersiveReaderControlpanel,
+    IImmersiveReaderSettings,
+    IRerImmersivereaderLayer,
+)
 from zope.component import adapter
-from zope.interface import implementer
-from zope.interface import Interface
+from zope.interface import implementer, Interface
 
 
 @adapter(Interface, IRerImmersivereaderLayer)
