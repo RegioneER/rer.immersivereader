@@ -11,7 +11,7 @@ class SettingsEditForm(RegistryEditForm):
 
     schema = IImmersiveReaderSettings
     schema_prefix = "rer.immersivereader"
-    label = _(u"Immersive Reader Settings")
+    label = _("Immersive Reader Settings")
 
 
 class SettingsView(ControlPanelFormWrapper):
