@@ -28,9 +28,9 @@ class ImmersiveReader:
             enabled_types = api.portal.get_registry_record(
                 "rer.immersivereader.enabled_types"
             )
+            if enabled_types and self.context.portal_type not in enabled_types:
+                enabled = False
         except InvalidParameterError:
-            enabled = False
-        if enabled_types and self.context.portal_type not in enabled_types:
             enabled = False
 
         result["immersive-reader"]["enabled"] = enabled
