@@ -2,38 +2,32 @@
     xmlns="http://namespaces.zope.org/zope"
     xmlns:browser="http://namespaces.zope.org/browser"
     xmlns:plone="http://namespaces.plone.org/plone"
-    i18n_domain="rer.immersivereader">
-
-  <!-- Set overrides folder for Just-a-Bunch-Of-Templates product -->
-  <include package="z3c.jbot" file="meta.zcml" />
-  <browser:jbot
-      directory="overrides"
-      layer="rer.immersivereader.interfaces.IRerImmersivereaderLayer"
-      />
+    i18n_domain="rer.immersivereader"
+    >
 
   <!-- Publish static files -->
   <plone:static
+      directory="static"
       name="rer.immersivereader"
       type="plone"
-      directory="static"
       />
 
-    <browser:viewlet
+  <browser:viewlet
       name="rer-immersivereader"
-      manager="plone.app.layout.viewlets.interfaces.IAboveContentBody"
-      template="immersive_reader_viewlet.pt"
-      class=".viewlets.ImmersiveReaderViewlet"
-      layer="rer.immersivereader.interfaces.IRerImmersivereaderLayer"
-      permission="zope2.View"
       for="plone.dexterity.interfaces.IDexterityContent"
+      manager="plone.app.layout.viewlets.interfaces.IAboveContentBody"
+      class=".viewlets.ImmersiveReaderViewlet"
+      template="immersive_reader_viewlet.pt"
+      permission="zope2.View"
+      layer="rer.immersivereader.interfaces.IRerImmersivereaderLayer"
       />
-    
-    <browser:page
+
+  <browser:page
       name="immersive-reader-settings"
       for="Products.CMFPlone.interfaces.IPloneSiteRoot"
       class=".controlpanel.SettingsView"
-      layer="rer.immersivereader.interfaces.IRerImmersivereaderLayer"
       permission="cmf.ManagePortal"
+      layer="rer.immersivereader.interfaces.IRerImmersivereaderLayer"
       />
 
 </configure>

@@ -6,8 +6,8 @@
 
     <configlet
         title="Immersive Reader Settings"
-        action_id="rer.immersivereader.settings"
-        appId="rer.immersivereader"
+        action_id="ImmersiveReaderSettings"
+        appId="ImmersiveReaderSettings"
         category="Products"
         condition_expr=""
         url_expr="string:${portal_url}/@@immersive-reader-settings"

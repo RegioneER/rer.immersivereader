@@ -1,27 +1,23 @@
-# -*- coding: utf-8 -*-
-from plone.app.contenttypes.testing import PLONE_APP_CONTENTTYPES_FIXTURE
-from plone.app.robotframework.testing import REMOTE_LIBRARY_BUNDLE_FIXTURE
 from plone.app.testing import (
     applyProfile,
     FunctionalTesting,
     IntegrationTesting,
+    PLONE_FIXTURE,
     PloneSandboxLayer,
 )
-from plone.testing import z2
+from plone.testing.zope import WSGI_SERVER_FIXTURE
 
-import rer.immersivereader
 import plone.restapi
+import rer.immersivereader
 
 
-class RerImmersivereaderLayer(PloneSandboxLayer):
-
-    defaultBases = (PLONE_APP_CONTENTTYPES_FIXTURE,)
+class TestLayer(PloneSandboxLayer):
+    defaultBases = (PLONE_FIXTURE,)
 
     def setUpZope(self, app, configurationContext):
         # Load any other ZCML that is required for your tests.
         # The z3c.autoinclude feature is disabled in the Plone fixture base
         # layer.
-
         self.loadZCML(package=plone.restapi)
         self.loadZCML(package=rer.immersivereader)
 
@@ -29,26 +25,21 @@ class RerImmersivereaderLayer(PloneSandboxLayer):
         applyProfile(portal, "rer.immersivereader:default")
 
 
-RER_IMMERSIVEREADER_FIXTURE = RerImmersivereaderLayer()
+FIXTURE = TestLayer()
 
 
-RER_IMMERSIVEREADER_INTEGRATION_TESTING = IntegrationTesting(
-    bases=(RER_IMMERSIVEREADER_FIXTURE,),
-    name="RerImmersivereaderLayer:IntegrationTesting",
+INTEGRATION_TESTING = IntegrationTesting(
+    bases=(FIXTURE,),
+    name="ImmersiveReaderRestApiLayer:IntegrationTesting",
 )
 
 
-RER_IMMERSIVEREADER_FUNCTIONAL_TESTING = FunctionalTesting(
-    bases=(RER_IMMERSIVEREADER_FIXTURE,),
-    name="RerImmersivereaderLayer:FunctionalTesting",
+FUNCTIONAL_TESTING = FunctionalTesting(
+    bases=(FIXTURE,),
+    name="ImmersiveReaderRestApiLayer:FunctionalTesting",
 )
 
-
-RER_IMMERSIVEREADER_ACCEPTANCE_TESTING = FunctionalTesting(
-    bases=(
-        RER_IMMERSIVEREADER_FIXTURE,
-        REMOTE_LIBRARY_BUNDLE_FIXTURE,
-        z2.ZSERVER_FIXTURE,
-    ),
-    name="RerImmersivereaderLayer:AcceptanceTesting",
+RESTAPI_TESTING = FunctionalTesting(
+    bases=(FIXTURE, WSGI_SERVER_FIXTURE),
+    name="ImmersiveReaderRestApiLayer:RestAPITesting",
 )

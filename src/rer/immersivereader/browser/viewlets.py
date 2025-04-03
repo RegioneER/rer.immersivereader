@@ -5,6 +5,7 @@ from plone.app.layout.viewlets.common import ViewletBase
 
 import logging
 
+
 logger = logging.getLogger(__name__)
 
 
@@ -15,7 +16,7 @@ class ImmersiveReaderViewlet(ViewletBase):
         context_state = api.content.get_view(
             context=self.context,
             request=self.request,
-            name=u"plone_context_state",
+            name="plone_context_state",
         )
         try:
             enabled_types = api.portal.get_registry_record(

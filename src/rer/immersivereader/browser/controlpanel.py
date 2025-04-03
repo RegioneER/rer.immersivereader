@@ -1,9 +1,11 @@
 # -*- coding: utf-8 -*-
 # from plone.z3cform import layout
-from plone.app.registry.browser.controlpanel import ControlPanelFormWrapper
-from plone.app.registry.browser.controlpanel import RegistryEditForm
-from rer.immersivereader.interfaces import IImmersiveReaderSettings
+from plone.app.registry.browser.controlpanel import (
+    ControlPanelFormWrapper,
+    RegistryEditForm,
+)
 from rer.immersivereader import _
+from rer.immersivereader.interfaces import IImmersiveReaderSettings
 
 
 class SettingsEditForm(RegistryEditForm):
@@ -11,7 +13,7 @@ class SettingsEditForm(RegistryEditForm):
 
     schema = IImmersiveReaderSettings
     schema_prefix = "rer.immersivereader"
-    label = _(u"Immersive Reader Settings")
+    label = _("Immersive Reader Settings")
 
 
 class SettingsView(ControlPanelFormWrapper):
