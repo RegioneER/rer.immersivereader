@@ -19,7 +19,7 @@ class IImmersiveReaderSettings(Interface):
             "enabled_types_help",
             default="Select a list of portal types that will have Immersive Reader link enabled.",
         ),
-        required=True,
+        required=False,
         default=[],
         missing_value=[],
         value_type=Choice(vocabulary="plone.app.vocabularies.PortalTypes"),
