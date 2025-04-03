@@ -2,7 +2,7 @@ Changelog
 =========
 
 
-0.1.6 (unreleased)
+0.2.0 (2025-04-03)
 ------------------
 
 - Volto/Plone6 support.
