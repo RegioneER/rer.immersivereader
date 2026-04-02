@@ -5,9 +5,9 @@
     i18n:domain="rer.immersivereader">
 
     <configlet
-        title="Immersiver Reader Settings"
-        action_id="rer.immersivereader.settings"
-        appId="rer.immersivereader"
+        title="RER Immersive Reader"
+        action_id="ImmersiveReaderSettings"
+        appId="ImmersiveReaderSettings"
         remove="True">
     </configlet>
 </object>

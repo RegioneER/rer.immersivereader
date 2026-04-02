@@ -19,7 +19,7 @@ msgstr ""
 
 #: rer/immersivereader/browser/controlpanel.py:14
 #: rer/immersivereader/profiles/default/controlpanel.xml
-msgid "Immersive Reader Settings"
+msgid "Immersive Reader"
 msgstr ""
 
 #: rer/immersivereader/configure.zcml:28
