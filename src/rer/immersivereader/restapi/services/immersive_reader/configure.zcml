@@ -10,8 +10,8 @@
       factory=".get.ImmersiveReaderGet"
       for="zope.interface.Interface"
       permission="zope2.View"
-      name="@immersive-reader"
       layer="rer.immersivereader.interfaces.IRerImmersivereaderLayer"
+      name="@immersive-reader"
       />
 
   <adapter
