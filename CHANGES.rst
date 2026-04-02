@@ -5,8 +5,10 @@ Changelog
 0.2.1 (unreleased)
 ------------------
 
-- Nothing changed yet.
-
+- Fix uninstall profile.
+  [cekk]
+- Fix controlpanel title and action id.
+  [cekk]
 
 0.2.0 (2025-04-03)
 ------------------

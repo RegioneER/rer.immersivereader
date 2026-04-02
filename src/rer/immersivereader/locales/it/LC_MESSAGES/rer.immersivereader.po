@@ -16,8 +16,8 @@ msgstr ""
 
 #: rer/immersivereader/browser/controlpanel.py:14
 #: rer/immersivereader/profiles/default/controlpanel.xml
-msgid "Immersive Reader Settings"
-msgstr "Impostazioni Immersive Reader"
+msgid "Immersive Reader"
+msgstr "Immersive Reader"
 
 #: rer/immersivereader/configure.zcml:28
 msgid "Installs the rer.immersivereader add-on."
